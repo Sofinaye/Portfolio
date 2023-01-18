@@ -74,3 +74,79 @@ body{
 .navbar-brand{
 
 }
+.project{
+  background-color: #E5E5E5;
+  display:flex;
+  flex-direction: column;
+ 
+}
+.project h3{
+  color: #1C1A19;
+  font-size: 2.6em;
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  padding: 10rem 2rem 7rem 2rem;
+
+}
+.services{
+  background-image: url("./img/yoga.jpeg");
+  width:32.7rem;
+  height:23rem;
+  display:flex;
+  
+  align-items: center;
+
+}
+.service-list{
+  display:flex;
+  list-style-type: none;
+  gap:2rem;
+  flex-direction: column;
+  font-weight: 600;
+  color: #999;
+  margin-left: 2rem;
+  }
+.service-social-list{
+  list-style-type: none;
+  display:flex;
+  gap:2rem;
+  margin-top: 19rem;
+  margin-left: 14rem;
+}
+.project-heading{
+  font-family: "Crete Round", serif;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  font-weight: 400;
+
+}
+.project-disc{
+  margin: 2.4rem 2.4rem 0 2.4rem ;
+}
+.project-disc-main{
+  color:#091E42;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.project-btns{
+  display:flex;
+}
+.project-btns-list{
+  width:5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: .1rem solid #8993A4;
+  background: #FFF;
+  color:#091E42;
+  font-family: "Inter";
+
+}
+#bts{
+  width:8rem;
+}
+.projec-btn{
+  width:16rem;
+  height:2.4rem;
+  padding:1rem;
+}
