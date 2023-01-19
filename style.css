@@ -60,7 +60,7 @@ body {
   margin-left: 2rem;
 }
 
-.portfolio-social a i {
+.portfolio-social a {
   color: #dbd8d7;
 }
 
@@ -301,7 +301,7 @@ body {
   align-items: center;
 }
 
-.qualification-heading {
+.qualification-heading i {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 2rem;
@@ -384,4 +384,3 @@ body {
 .footer-social-item {
   color: #505f79;
 }
-
