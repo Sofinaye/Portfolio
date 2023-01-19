@@ -78,6 +78,7 @@ body{
   background-color: #E5E5E5;
   display:flex;
   flex-direction: column;
+  padding: 2rem;
  
 }
 .project h3{
@@ -85,16 +86,29 @@ body{
   font-size: 2.6em;
   font-family: "Crete Round", serif;
   font-weight: 400;
-  padding: 10rem 2rem 7rem 2rem;
+  margin: 3rem 0;
+  text-align: center;
+  border:1px solid #212121;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  padding:2rem;
+
+}
+.dash{
+  display:block;
+  color:#212121;
 
 }
 .services{
   background-image: url("./img/yoga.jpeg");
-  width:32.7rem;
-  height:23rem;
+  width:100%;
+  height:60vw;
   display:flex;
-  
+  background-position: center;
+  background-size: cover;
   align-items: center;
+  overflow: hidden;
 
 }
 .service-list{
@@ -103,15 +117,13 @@ body{
   gap:2rem;
   flex-direction: column;
   font-weight: 600;
-  color: #999;
+  color: #000;
   margin-left: 2rem;
   }
 .service-social-list{
   list-style-type: none;
   display:flex;
   gap:2rem;
-  margin-top: 19rem;
-  margin-left: 14rem;
 }
 .project-heading{
   font-family: "Crete Round", serif;
@@ -145,8 +157,8 @@ body{
 #bts{
   width:8rem;
 }
-.projec-btn{
-  width:16rem;
-  height:2.4rem;
-  padding:1rem;
+.project-btn{
+ 
+  padding:1rem 2rem;
+  margin-left: 1rem;
 }
