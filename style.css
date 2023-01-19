@@ -75,7 +75,7 @@ body{
 
 }
 .project{
-  background-color: #E5E5E5;
+  background-color: #FFF;
   display:flex;
   flex-direction: column;
   padding: 2rem;
@@ -230,4 +230,67 @@ body{
   color:#FFF;
   font-size: 1.6rem;
   border:none;
+}
+.about{
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #1C1A19;
+  
+}
+.about-heading{
+  margin-top: 4rem;
+  font-size: 4rem;
+  color:#FF6B00;
+  font-family: "Crete Round";
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.about-disc{
+  color:#F4F5F7;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.about-btn{
+  background-color: #FF6B00;
+  color:#FFF;
+  border:none;
+  padding: .5rem 1.5rem;
+  font-weight: 500;
+}
+.about-line{
+  height: 1px;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #fff;
+}
+.qualification{
+  padding: 4rem 2rem;
+  background-color: #1C1A19;
+}
+.qualification-type{
+  margin-bottom: 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qualification-heading{
+  font-size: 2rem;
+  color: #FFF;
+  margin-bottom: 2rem;
+}
+.qualification-heading i{
+  color: #FF6B00;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  
+}
+.qualification-list{
+  list-style: none;
+  color:#FFF;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.qualification-item{
+  margin-bottom: 1rem;
 }
