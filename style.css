@@ -24,7 +24,7 @@ body {
 
 .header {
   background-color: #1c1a19;
-  padding: 12rem 3rem;
+  padding: 12rem 3rem 0 3rem;
 }
 
 .header-text {
@@ -58,6 +58,16 @@ body {
   color: #dbd8d7;
   font-size: 1.6rem;
   margin-left: 2rem;
+}
+
+.portfolio-social a i {
+  color: #dbd8d7;
+}
+
+.portfolio-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -3rem;
 }
 
 .navbar {
@@ -266,6 +276,12 @@ body {
   font-weight: 500;
 }
 
+.about-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -3rem;
+}
+
 .about-line {
   height: 1px;
   width: 100%;
@@ -368,3 +384,4 @@ body {
 .footer-social-item {
   color: #505f79;
 }
+
