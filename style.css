@@ -301,7 +301,7 @@ body {
   align-items: center;
 }
 
-.qualification-heading i {
+.qualification-heading {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 2rem;
@@ -384,3 +384,4 @@ body {
 .footer-social-item {
   color: #505f79;
 }
+
