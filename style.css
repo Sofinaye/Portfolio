@@ -1,109 +1,103 @@
 
 
 
-html{
+html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
-*,*::after,::before{
+*,
+*::after,
+::before {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
 }
 
-body{
+body {
   font-size: 1.2rem;
   font-family: 'Inter', sans-serif;
 }
 
-.header{
-  background-color: #1C1A19;
+.header {
+  background-color: #1c1a19;
   padding: 12rem 3rem;
-
 }
 
-.header-text{
+.header-text {
   font-family: "Crete Round", serif;
   font-size: 2.8rem;
-  color: #FF6B00;
+  color: #ff6b00;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
-.header-text span{
+.header-text span {
   display: block;
 }
 
-.body-text-header{
-  color:#FFF5E1;
+.body-text-header {
+  color: #fff5e1;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-
 }
 
-.body-text-main{
-  color: #FFF;
+.body-text-main {
+  color: #fff;
   line-height: 1.2;
 }
 
-.portfolio-social{
+.portfolio-social {
   display: flex;
   gap: 2rem;
   margin-top: 1.5rem;
   list-style: none;
-  color: #DBD8D7;
+  color: #dbd8d7;
   font-size: 1.6rem;
   margin-left: 2rem;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #3C3A39;
-  color: #FFF;
+  background-color: #3c3a39;
+  color: #fff;
   font-weight: 700;
   font-size: 1.8rem;
   padding: 1rem 3rem;
-
 }
-.navbar-list{
+
+.navbar-list {
   display: none;
-
 }
 
-.project{
-  background-color: #FFF;
+.project {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  
- 
 }
 
-.underlined{
+.underlined {
   border-bottom: 1px solid #212121;
 }
 
-.project h3{
-  color: #1C1A19;
+.project h3 {
+  color: #1d1a19;
   font-size: 2.6em;
   font-family: "Crete Round", serif;
   font-weight: 400;
   margin: 3rem 0;
   text-align: center;
-  
   padding: 2rem;
-
 }
 
-.dash{
+.dash {
   display: block;
   color: #212121;
-
 }
 
-.services{
+.services {
   background-image: url("./img/yoga.jpeg");
   width: 100%;
   height: 60vw;
@@ -112,10 +106,9 @@ body{
   background-size: cover;
   align-items: center;
   position: relative;
-
 }
 
-.service-list{
+.service-list {
   display: flex;
   list-style-type: none;
   gap: 2rem;
@@ -123,9 +116,9 @@ body{
   font-weight: 600;
   color: #000;
   margin-left: 2rem;
-  }
+}
 
-.service-social-list{
+.service-social-list {
   list-style-type: none;
   display: flex;
   gap: 2rem;
@@ -134,255 +127,239 @@ body{
   right: 2rem;
 }
 
-.project-heading{
+.project-heading {
   font-family: "Crete Round", serif;
   font-size: 3.2rem;
   line-height: 4.4rem;
   font-weight: 400;
-
 }
 
-.project-disc{
+.project-disc {
   margin: 2.4rem 2.4rem 0 2.4rem ;
 }
 
-.project-disc-main{
-  color: #091E42;
-  font-family: "Inter";
+.project-disc-main {
+  color: #091e42;
+  font-family:'Inter';
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-.project-btns{
+.project-btns {
   display: flex;
 }
 
-.project-btns-list{
+.project-btns-list {
   width: 5rem;
   padding: 1rem;
   margin: 1rem;
-  border: .1rem solid #8993A4;
-  background: #FFF;
-  color: #091E42;
+  border: .1rem solid #8993a4;
+  background: #fff;
+  color: #091e42;
   font-family: "Inter";
-
 }
 
-#bts{
+#bts {
   width: 8rem;
 }
 
-.project-btn{
- 
-  padding:1rem 2rem;
+.project-btn {
+  padding: 1rem 2rem;
   margin-left: 1rem;
-  background-color: #FF6B00;
-  color: #FFF;
+  background-color: #ff6b00;
+  color: #fff;
   font-family: "Inter";
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2.4rem;
   border: none;
-
 }
 
-.projects-primary{
-  background-image: 
-  
-   linear-gradient(
-    180.45deg, rgba(38,
-    38, 38, 0) 0.75%, rgba(38,
-     38, 38, 0.9) 61.94%),
-    
+.projects-primary {
+  background-image: linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+     rgba(38, 38, 38, 0.9) 61.94%),
     url("./img/art.jpg");
-  
   background-size: cover;
   background-position: center;
   margin-top: 2rem;
-  
 }
 
-.projects-heading1 h3{
+.projects-heading1 h3 {
   font-family: "Crete Round";
   font-size: 3rem;
   margin-right: 7rem;
-  color: #FFF;
-
+  color: #fff;
 }
 
-.projects-heading1 span{
+.projects-heading1 span {
   display: block;
 }
 
-.projects-disc1{
+.projects-disc1 {
   font: "Inter";
   margin: 2rem;
   font-size: 1.6rem;
-  color: #FFF;
-
+  color: #fff;
 }
 
-.project1-bttns{
+.project1-bttns {
   display: flex;
   margin: 1rem;
-
 }
 
-.project1-btns{
+.project1-btns {
   padding: 1rem;
   margin: 1rem;
   background: rgba(255, 255, 255, 0.24);
   border: none;
-  color: #FFF;
+  color: #fff;
   font-family: "Inter";
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.project1-btn{
-  background-color: #FF6B00;
+.project1-btn {
+  background-color: #ff6b00;
   width: 100%;
   height: 10vw;
   font-family: "Inter";
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   font-size: 1.6rem;
   border: none;
 }
 
-.about{
+.about {
   margin-top: 4rem;
   padding: 2rem;
-  background-color: #1C1A19;
-  
+  background-color: #1c1a19;
 }
 
-.about-heading{
+.about-heading {
   margin-top: 4rem;
   font-size: 4rem;
-  color: #FF6B00;
+  color: #ff6b00;
   font-family: "Crete Round";
   font-weight: 400;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.about-disc{
-  color: #F4F5F7;
+.about-disc {
+  color: #f4f5f7;
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
 
-.about-btn{
-  background-color: #FF6B00;
-  color: #FFF;
+.about-btn {
+  background-color: #ff6b00;
+  color: #fff;
   border: none;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 500;
 }
 
-.about-line{
+.about-line {
   height: 1px;
   width: 100%;
   margin-top: 3rem;
   background-color: #fff;
 }
 
-.qualification{
+.qualification {
   padding: 4rem 2rem;
-  background-color: #1C1A19;
+  background-color: #1c1a19;
 }
 
-.qualification-type{
+.qualification-type {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.qualification-heading{
+.qualification-heading {
   font-size: 2rem;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 2rem;
 }
 
-.qualification-heading i{
-  color: #FF6B00;
+.qualification-heading i {
+  color: #ff6b00;
   font-size: 1.8rem;
   margin-right: 1rem;
-  
 }
 
-.qualification-list{
+.qualification-list {
   list-style: none;
-  color: #FFF;
+  color: #fff;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.qualification-item{
+.qualification-item {
   margin-bottom: 1rem;
 }
 
-.contact{
+.contact {
   padding: 5rem 2rem;
 }
 
-.contact-heading{
+.contact-heading {
   font-size: 2.2rem;
   line-height: 1.2;
   margin-bottom: 2rem;
-  color: #172B4D;
+  color: #172b4d;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
 }
 
-.contact-input{
+.contact-input {
   border: none;
-  border-bottom: solid 1px  #DBD8D7;
-  padding: .5rem 1rem;
+  border-bottom: solid 1px  #dbd8d7;
+  padding: 0.5rem 1rem;
   width: 100%;
 }
 
-.contact-textarea{
+.contact-textarea {
   border: none;
   padding: 1rem;
-  background: #FBF8F7;
+  background: #fbf8f7;
   height: 8rem;
   width: 100%;
 }
 
-.contact-btn{
-  padding: .5rem 1rem;
-  background-color: #FF6B00;
+.contact-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ff6b00;
   border: none;
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
-
 }
 
-.footer{
+.footer {
   margin-top: 3rem;
-
 }
 
-.footer-social{
-  display:flex;
+.footer-social {
+  display: flex;
   justify-content: center;
   gap: 1.5rem;
   list-style: none;
   padding: 2rem;
-  font-size: 1.8rem ;
-  border-top: 1px solid #DFE1E6;
+  font-size: 1.8rem;
+  border-top: 1px solid #dfe1e6;
 }
 
-.footer-social-item{
-  color: #505F79;
+.footer-social-item {
+  color: #505f79;
 }
