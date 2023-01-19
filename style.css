@@ -1,6 +1,4 @@
 
-
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -135,12 +133,12 @@ body {
 }
 
 .project-disc {
-  margin: 2.4rem 2.4rem 0 2.4rem ;
+  margin: 2.4rem 2.4rem 0 2.4rem;
 }
 
 .project-disc-main {
   color: #091e42;
-  font-family:'Inter';
+  font-family: 'Inter', serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
@@ -153,10 +151,10 @@ body {
   width: 5rem;
   padding: 1rem;
   margin: 1rem;
-  border: .1rem solid #8993a4;
+  border: 0.1rem solid #8993a4;
   background: #fff;
   color: #091e42;
-  font-family: "Inter";
+  font-family: "Inter", serif;
 }
 
 #bts {
@@ -168,7 +166,7 @@ body {
   margin-left: 1rem;
   background-color: #ff6b00;
   color: #fff;
-  font-family: "Inter";
+  font-family: "Inter", serif;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2.4rem;
@@ -187,7 +185,7 @@ body {
 }
 
 .projects-heading1 h3 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-size: 3rem;
   margin-right: 7rem;
   color: #fff;
@@ -198,7 +196,7 @@ body {
 }
 
 .projects-disc1 {
-  font: "Inter";
+  font-family: 'Inter', serif;
   margin: 2rem;
   font-size: 1.6rem;
   color: #fff;
@@ -215,7 +213,7 @@ body {
   background: rgba(255, 255, 255, 0.24);
   border: none;
   color: #fff;
-  font-family: "Inter";
+  font-family: 'Inter', serif;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -224,7 +222,7 @@ body {
   background-color: #ff6b00;
   width: 100%;
   height: 10vw;
-  font-family: "Inter";
+  font-family: "Inter", serif;
   font-weight: 700;
   color: #fff;
   font-size: 1.6rem;
@@ -241,7 +239,7 @@ body {
   margin-top: 4rem;
   font-size: 4rem;
   color: #ff6b00;
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-weight: 400;
   margin-bottom: 2rem;
   text-align: center;
