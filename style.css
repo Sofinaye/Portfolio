@@ -12,7 +12,7 @@ html {
   box-sizing: inherit;
 }
 
-.navbar-brand a {
+.navbar-brand {
   text-decoration: none;
   color: #fff5e1;
 }
