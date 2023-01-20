@@ -100,3 +100,47 @@ html {
 .navbar-list-item a {
   color: #fff;
 }
+
+.project {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.underlined {
+  border-bottom: 1px solid #212121;
+}
+
+.project h3 {
+  color: #1d1a19;
+  font-size: 2.6em;
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  margin: 3rem 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.dash {
+  display: block;
+  color: #212121;
+}
+
+.project-heading {
+  font-family: "Crete Round", serif;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  font-weight: 400;
+}
+
+.project-disc {
+  margin: 2.4rem 2.4rem 0 2.4rem;
+}
+
+.project-disc-main {
+  color: #091e42;
+  font-family: 'Inter', serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
