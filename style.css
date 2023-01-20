@@ -313,24 +313,29 @@ html {
 }
 
 .qualification-heading {
-  font-size: 2rem;
+  font-size: 32px;
+  font-weight: 700;
   color: #fff;
   margin-bottom: 2rem;
 }
 
 .qualification-heading i {
   color: #ff6b00;
-  font-size: 1.8rem;
+  font-size: 18px;
   margin-right: 1rem;
 }
 
 .qualification-list {
   list-style: none;
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  gap: 20px;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem 0;
 }
 
 .qualification-item {
