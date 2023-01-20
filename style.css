@@ -299,3 +299,41 @@ html {
   margin-top: 3rem;
   background-color: #fff;
 }
+
+.qualification {
+  padding: 4rem 2rem;
+  background-color: #1c1a19;
+}
+
+.qualification-type {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qualification-heading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.qualification-heading i {
+  color: #ff6b00;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+.qualification-list {
+  list-style: none;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qualification-item {
+  margin-bottom: 1rem;
+}
+
