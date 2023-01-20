@@ -251,3 +251,46 @@ html {
   background-color: #ee5100;
   transform: translateY(3px);
 }
+
+.about {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #1c1a19;
+}
+
+.about-heading {
+  margin-top: 4rem;
+  font-size: 4rem;
+  color: #ff6b00;
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-disc {
+  color: #f4f5f7;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.about-btn {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.about-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -3rem;
+}
+
+.about-line {
+  height: 1px;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #fff;
+}
