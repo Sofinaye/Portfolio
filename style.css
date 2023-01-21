@@ -271,6 +271,7 @@ html {
   margin-top: 10rem;
   padding: 5rem 2rem 2rem 2rem;
   background-color: #1c1a19;
+  position: relative;
 }
 
 .about-heading {
@@ -314,10 +315,16 @@ html {
 }
 
 .about-img {
-  display: flex;
-  justify-content: flex-end;
+  height: 25rem;
   margin-right: -2rem;
-  margin-top: -4rem;
+}
+
+.about-overly {
+  background-image: url("./img/about.png");
+  height: 25rem;
+  position: absolute;
+  width: 18rem;
+  right: -2rem;
 }
 
 .about-line {
