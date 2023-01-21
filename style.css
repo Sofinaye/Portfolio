@@ -200,6 +200,11 @@ html {
   transform: translateY(3px);
 }
 
+.project-btn:active {
+  background-color: #ee3100;
+  transform: translateY(1px);
+}
+
 .projects-primary {
   background-image: url("./img/art1.png");
   background-size: cover;
@@ -257,6 +262,11 @@ html {
   transform: translateY(3px);
 }
 
+.project1-btn:active {
+  background-color: #ee3100;
+  transform: translateY(1px);
+}
+
 .about {
   margin-top: 10rem;
   padding: 5rem 2rem 2rem 2rem;
@@ -296,6 +306,11 @@ html {
 .about-btn:hover {
   background-color: #ee5100;
   transform: translateY(3px);
+}
+
+.about-btn:active {
+  background-color: #ee3100;
+  transform: translateY(1px);
 }
 
 .about-img {
