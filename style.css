@@ -168,6 +168,7 @@ html {
 .project-btns {
   display: flex;
   gap: 15px;
+  list-style: none;
 }
 
 .project-btns-list {
