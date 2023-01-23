@@ -166,20 +166,23 @@ html {
 }
 
 .project-btns {
-  display: flex;
-  gap: 15px;
+  /* display: flex; */
+  padding-left: 0.5rem;
+  margin-left: 30px;
   list-style: none;
 }
 
 .project-btns-list {
+  float: left;
   font-weight: 500;
   font-size: 15px;
   padding: 1rem;
-  margin: 1rem 0;
-  border: 0.1rem solid #8993a4;
-  background: #fff;
-  color: #091e42;
+  margin: 1rem;
+  background-color: #ebebff;
+  color: #6070ff;
   font-family: "Inter", serif;
+  border-radius: 8px;
+  border: none;
 }
 
 .project-btn {
