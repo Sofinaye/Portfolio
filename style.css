@@ -395,7 +395,7 @@ html {
 
 .contact-heading {
   font-family: 'Inter', serif;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 2rem;
   color: #172b4d;
@@ -406,12 +406,15 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  font-family: 'Inter', serif;
 }
 
 .contact-input {
   border: none;
+  margin-top: 2rem;
   border-bottom: solid 1px #dbd8d7;
   width: 100%;
+  color: #979493;
 }
 
 .contact-textarea {
@@ -420,12 +423,14 @@ html {
   background: #fbf8f7;
   height: 8rem;
   width: 100%;
+  color: #3c3a39;
 }
 
 .contact-btn {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: #ff6b00;
   border: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 17px;
 }
