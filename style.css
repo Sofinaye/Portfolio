@@ -401,3 +401,31 @@ html {
   color: #172b4d;
   text-align: center;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-input {
+  border: none;
+  border-bottom: solid 1px #dbd8d7;
+  width: 100%;
+}
+
+.contact-textarea {
+  border: none;
+  padding: 1rem;
+  background: #fbf8f7;
+  height: 8rem;
+  width: 100%;
+}
+
+.contact-btn {
+  padding: 1rem 2rem;
+  background-color: #ff6b00;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+}
