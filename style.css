@@ -476,4 +476,14 @@ html {
     font-size: 15px;
     font-family: 'Inter', serif;
   }
+
+  .headerr {
+    padding: 0 9rem;
+  }
+
+  .header {
+    gap: 3rem;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
 }
