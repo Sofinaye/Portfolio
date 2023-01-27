@@ -458,3 +458,22 @@ html {
 .footer-social-item {
   color: #505f79;
 }
+
+@media only screen and (min-width: 768px) {
+  .navbar-list {
+    display: none;
+  }
+
+  .navbar-link {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .navbar-link-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Inter', serif;
+  }
+}
