@@ -97,6 +97,10 @@ html {
   display: flex;
 }
 
+.navbar-link {
+  display: none;
+}
+
 .navbar-list-item a {
   color: #fff;
 }
