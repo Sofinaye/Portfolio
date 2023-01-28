@@ -263,7 +263,8 @@ body {
 .project1-btn {
   background-color: #ff6b00;
   width: 100%;
-  height: 10vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-family: "Inter", serif;
   font-weight: 700;
   color: #fff;
@@ -562,5 +563,39 @@ body {
     height: 2px;
     display: block;
     background-color: #212121;
+  }
+
+  .all-project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .projects-primary {
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    padding-top: 7rem;
+  }
+
+  .project1-btn {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .projects-primary:hover {
+    background-image: url("./img/project-bg.svg");
+  }
+
+  .projects-primary:hover .project1-btn {
+    display: block;
+    align-items: flex-end;
+  }
+
+  .projects-primary:hover .project1-btns,
+  .projects-primary:hover .projects-heading1,
+  .projects-primary:hover .projects-disc1 {
+    display: none;
   }
 }
