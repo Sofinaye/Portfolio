@@ -210,6 +210,7 @@ body {
 .project-btn:hover {
   background-color: rgb(231, 220, 175);
   transform: translateY(3px);
+  color: #ff6b00;
 }
 
 .project-btn:active {
@@ -277,6 +278,7 @@ body {
 .project1-btn:hover {
   background-color: rgb(231, 220, 175);
   transform: translateY(3px);
+  color: #ff6b00;
 }
 
 .project1-btn:active {
@@ -328,6 +330,7 @@ body {
 .about-btn:hover {
   background-color: rgb(231, 220, 175);
   transform: translateY(3px);
+  color: #ff6b00;
 }
 
 .about-btn:active {
@@ -448,6 +451,12 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 17px;
+}
+
+.contact-btn:hover {
+  background-color: rgb(231, 220, 175);
+  transform: translateY(3px);
+  color: #ff6b00;
 }
 
 .footer {
