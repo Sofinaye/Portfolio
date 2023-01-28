@@ -645,6 +645,11 @@ body {
 
   .about-heading {
     text-align: left;
+    font-size: 72px;
+  }
+
+  .about-disc {
+    font-size: 20px;
   }
 
   .about-img {
@@ -676,6 +681,14 @@ body {
     justify-content: space-between;
   }
 
+  .qualification-heading {
+    font-size: 32px;
+  }
+
+  .qualification-item {
+    font-size: 22px;
+  }
+
   .qualification-list {
     align-items: flex-start;
   }
@@ -693,6 +706,7 @@ body {
 
   .contact-heading {
     width: 40%;
+    font-size: 40px;
   }
 
   .contact-form {
