@@ -55,7 +55,7 @@ html {
   font-family: "Roboto", serif;
 }
 
-.body-text-main {
+.body-text-main p {
   color: #fff;
   font-family: 'Poppins', serif;
   font-size: 16px;
@@ -459,6 +459,10 @@ html {
   color: #505f79;
 }
 
+.header-overly {
+  /* display: none; */
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-list {
     display: none;
@@ -483,7 +487,37 @@ html {
 
   .header {
     gap: 3rem;
+    padding-right: 0;
     flex-direction: row-reverse;
     justify-content: flex-start;
+  }
+
+  .header-main-container {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .body-text-main {
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .portfolio-img {
+    display: none;
+  }
+
+  .header-overly {
+    background-image: url("./img/header.svg");
+    flex: 1;
+    height: 45vw;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .portfolio-social {
+    order: -1;
+    display: flex;
+    flex-direction: column;
   }
 }
