@@ -647,4 +647,25 @@ body {
   .qualification-type {
     align-items: flex-start;
   }
+
+  .contact {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 3rem;
+  }
+
+  .contact-heading {
+    width: 40%;
+  }
+
+  .contact-form {
+    flex: 1;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .contact-input {
+    margin-top: 0;
+  }
 }
