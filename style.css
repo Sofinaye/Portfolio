@@ -477,6 +477,10 @@ body {
     font-size: 80%;
   }
 
+  .navbar-brand {
+    font-size: 20px;
+  }
+
   .navbar-list {
     display: none;
   }
@@ -492,6 +496,18 @@ body {
     text-decoration: none;
     font-size: 15px;
     font-family: 'Inter', serif;
+  }
+
+  .header-text {
+    font-size: 72px;
+  }
+
+  .body-text-header {
+    font-size: 32px;
+  }
+
+  .body-text-main p {
+    font-size: 20px;
   }
 
   .headerr {
@@ -556,6 +572,7 @@ body {
     justify-content: space-between;
     gap: 2rem;
     padding: 0;
+    font-size: 40px;
   }
 
   .underlined-hr {
@@ -563,6 +580,14 @@ body {
     height: 2px;
     display: block;
     background-color: #212121;
+  }
+
+  .project-heading {
+    font-size: 40px;
+  }
+
+  .project-disc-main {
+    font-size: 20px;
   }
 
   .all-project {
@@ -606,6 +631,7 @@ body {
     gap: 3rem;
     justify-content: space-between;
     padding-left: 10%;
+    overflow-x: hidden;
   }
 
   .about-heading {
@@ -631,6 +657,7 @@ body {
     width: 100%;
     margin-right: 0;
     height: 100%;
+    right: 0;
   }
 
   .qualification {
