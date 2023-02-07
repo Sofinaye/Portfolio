@@ -739,6 +739,22 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #3c3a39;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 5rem;
+  width: 0;
+  transition: 0.3s;
+}
+
+.menu-section-active {
+  width: 100%;
 }
 
 .menu-list {
@@ -747,12 +763,28 @@ body {
   font-family: 'Inter', serif;
   font-weight: 700;
   color: #fff5e1;
-  text-decoration: underline;
   display: flex;
+  padding: 0 2rem;
   flex-direction: column;
   gap: 2rem;
 }
 
-.disapper {
-  color: #66798e;
+.menu-toggle {
+  position: absolute;
+  padding: 0.5rem;
+  right: 2rem;
+  top: 2rem;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  color: #67798e;
+}
+
+.menu-item {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 1rem;
 }
