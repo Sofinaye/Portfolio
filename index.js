@@ -10,4 +10,10 @@ menuIcon.addEventListener('click', ()=>{
 menuToggle.addEventListener('click', ()=>{
   menuSection.classList.remove('menu-section-active')
   document.body.style.overflowY = 'unset';
-} )
+})
+
+document.querySelectorAll('.menu-item a').forEach((item)=> {
+  item.addEventListener('click', ()=>{
+    menuSection.classList.remove('menu-section-active')
+  })
+})
