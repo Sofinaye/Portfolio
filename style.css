@@ -734,3 +734,25 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c3a39;
+}
+
+.menu-list {
+  list-style: none;
+  font-size: 32px;
+  font-family: 'Inter', serif;
+  font-weight: 700;
+  color: #fff5e1;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.disapper {
+  color: #66798e;
+}
