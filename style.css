@@ -779,9 +779,16 @@ body {
 
 .menu-toggle i {
   color: #67798e;
+  font-size: 12px;
 }
 
 .menu-item {
   border-bottom: 1px solid #6f6c6b;
   padding: 1rem;
 }
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
