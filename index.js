@@ -4,8 +4,10 @@ const menuSection = document.querySelector('#menu-section')
 
 menuIcon.addEventListener('click', ()=>{
   menuSection.classList.add('menu-section-active')
+  document.body.style.overflowY = 'hidden';
 } )
 
 menuToggle.addEventListener('click', ()=>{
   menuSection.classList.remove('menu-section-active')
+  document.body.style.overflowY = 'unset';
 } )
