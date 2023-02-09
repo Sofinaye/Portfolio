@@ -60,13 +60,9 @@ const menuIcon = document.querySelector('#menu-icon')
 const menuToggle = document.querySelector('#menu-toggle')
 const menuSection = document.querySelector('#menu-section')
 
-const populateProjects = ()=>{
-  console.log("tada")
-  const projectsContainer = document.querySelector("#portfolio")
-  
-  const showCaseElement = document.createElement("div")
+const generateShowCaseDom = ()=>{
+const showCaseElement = document.createElement("div")
   showCaseElement.setAttribute("class", "project-list")
-  projectsContainer.appendChild(showCaseElement)
 
   const showCaseElementBrand = document.createElement("div")
   showCaseElementBrand.setAttribute("class", "project-item")
@@ -120,35 +116,36 @@ const populateProjects = ()=>{
   showCaseBtn.setAttribute("class", "project-btn")
   showCaseBtn.textContent = showCaseProject.technology
   showCaseBtnContainer.appendChild(showCaseBtn)
-
   
-  //  <div class="project-content">
-  //         <h3 class="underlined">My Recent Works <span class="underlined-hr"></span> </h3>
-  //       <div class="project-list">
-  //         <div class="project-item">
-  //           <div class="project-item-img">
-  //         <img src="./img/tonic2.png" alt="" class="img">
-  //       </div>
-  //     </div>
-  //     <div class="project-disc">
-  //     <h2 class="project-heading">Multi-Post Stories</h2>
-  //     <p class="project-disc-main">A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text.</p>
+  return showCaseElement
+}
+const populateProjects = ()=>{
+  const projectsContainer = document.querySelector("#portfolio")
+  const showCaseElement = generateShowCaseDom()
+  projectsContainer.appendChild(showCaseElement)
+  
 
-  //     <ul class="project-btns">
-  //       <li><button type="button" class="project-btns-list">css</button></li>
-  //       <li><button type="button" class="project-btns-list">html</button></li>
-  //       <li><button type="button" class="project-btns-list" id="bts">bootstrap</button></li>
-  //       <li><button type="button" class="project-btns-list">Ruby</button></li>
-        
-  //     </ul>
-  //     <div class="project-bttn">
-  //       <button type="button" class="project-btn">See Project</button>
-  //     </div>
-  //     </div>
-  //         </div>
+
+
+  // <div class="all-project">
+  //     <div class="projects-primary">
+  //       <div class="projects-heading1">
+  //         <h3>Professional art <span>printing Data</span></p>
   //       </div>
+  //       <div class="projects-disc1">
+  //         <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
+  //       </div>
+  //       <ul class="project1-bttns">
+  //         <li><button type="button" class="project1-btns">html</button></li>
+  //         <li><button type="button" class="project1-btns">bootstrap</button></li>
+  //         <li><button type="button" class="project1-btns">Ruby</button></li>
+  //       </ul>
+  //       <button type="button" class="project1-btn">See project</button>
+  //     </div>
+ 
 
 }
+
 menuIcon.addEventListener('click', ()=>{
   menuSection.classList.add('menu-section-active')
   document.body.style.overflowY = 'hidden';
