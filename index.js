@@ -6,6 +6,29 @@ const showCaseProject = {
     seeLive: "#",
     seeSource: "#"
 }
+
+
+    // <div class="popup">
+  //   <div class="popup-heading">
+  //     <h2 class="popup-heading-text">Multi Post Stories</h2>
+  //     <button id="popup-close-btn" class="popup-heading-btn"><i class="fa-solid fa-xmark"></i></button>
+  //   </div>
+    
+  //   <ul class="popup-btn">
+  //     <li><button class="popup-btn-item">html</button></li>
+  //     <li><button class="popup-btn-item">Bootstrap</button></li>
+  //     <li><button class="popup-btn-item">Ruby on rials</button></li>
+  //   </ul>
+  //   <img src="./img/popup.png" alt="" class="popup-img">
+  //   <p class="popup-disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ut incidunt. Nostrum voluptate vel hic adipisci officia. Officia commodi perspiciatis fuga aliquam? Alias fuga eum qui rerum, odit voluptatum soluta?
+  //   Ut quisquam at quibusdam minima, ipsam atque consectetur voluptatum iure culpa sint quod autem non expedita nesciunt esse necessitatibus! Dicta ducimus dolor id sint ratione, ea omnis optio qui hic!</p>
+  //   <ul class="popup-disc-btn">
+  //     <li><button class="popup-disc-btn-item">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></button></li>
+  //     <li><button class="popup-disc-btn-item">See Source  <i class="fa-brands fa-github"></i></button></li>
+  //   </ul>
+  // </div>
+
+
 const projectsData = [
   
  {
@@ -122,6 +145,7 @@ const showCaseElement = document.createElement("div")
   
   const showCaseBtn = document.createElement("button")
   showCaseBtn.setAttribute("class", "project-btn")
+  showCaseBtn.setAttribute("data-id", "showCase")
   showCaseBtn.textContent = "See Project"
   showCaseBtnContainer.appendChild(showCaseBtn)
   
@@ -132,9 +156,10 @@ const generateProjectListsDom = ()=>{
   const projectsContainer = document.createElement("div")
   projectsContainer.setAttribute("class", "all-project")
 
-  projectsData.forEach((project)=>{
+  projectsData.forEach((project, index)=>{
     const projectContainer = document.createElement("div")
     projectContainer.setAttribute("class", "projects-primary")
+    projectContainer.style.backgroundImage = `url(${project.image})`;
     projectsContainer.appendChild(projectContainer)
     
     const projectHeading = document.createElement("div")
@@ -177,6 +202,7 @@ const generateProjectListsDom = ()=>{
     projectBtn.setAttribute("class", "project1-btn")
     projectBtn.setAttribute("type", "button")
     projectBtn.textContent = "See Project"
+    projectBtn.setAttribute("data-id", index)
     projectContainer.appendChild(projectBtn)
 
     projectsContainer.appendChild(projectContainer)
