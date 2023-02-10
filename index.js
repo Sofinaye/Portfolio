@@ -3,14 +3,14 @@ const showCaseProject = {
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text.",
     image: "./img/tonic2.png",
     technologies: ["css", "html", "bootstrap", "Ruby"],
-    technology: "See Project",
     seeLive: "#",
     seeSource: "#"
 }
 const projectsData = [
   
  {
-    title: "Professional art printing data",
+    titleTop: "Professional art",
+    titleBottom: "printing data",
     description: "A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard",
     image: "./img/art1.png",
     technologies: ["css", "html", "bootstrap"],
@@ -18,7 +18,8 @@ const projectsData = [
     seeSource: "#"
   },
  {
-    title: "Professional art printing data",
+    titleTop: "Professional art",
+    titleBottom: "printing data",
     description: "A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard",
     image: "./img/art1.png",
     technologies: ["css", "html", "bootstrap"],
@@ -26,7 +27,8 @@ const projectsData = [
     seeSource: "#"
   },
  {
-    title: "Professional art printing data",
+    titleTop: "Professional art",
+    titleBottom: "printing data",
     description: "A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard",
     image: "./img/art1.png",
     technologies: ["css", "html", "bootstrap"],
@@ -34,7 +36,8 @@ const projectsData = [
     seeSource: "#"
   },
  {
-    title: "Professional art printing data",
+    titleTop: "Professional art",
+    titleBottom: "printing data",
     description: "A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard",
     image: "./img/art1.png",
     technologies: ["css", "html", "bootstrap"],
@@ -42,7 +45,8 @@ const projectsData = [
     seeSource: "#"
   },
  {
-    title: "Professional art printing data",
+    titleTop: "Professional art",
+    titleBottom: "printing data",
     description: "A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard",
     image: "./img/art1.png",
     technologies: ["css", "html", "bootstrap"],
@@ -50,9 +54,13 @@ const projectsData = [
     seeSource: "#"
   },
  {
-    title: "Professional art printing data",
+    titleTop: "Professional art",
+    titleBottom: "printing data",
     description: "A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard",
     image: "./img/art1.png",
+    technologies: ["css", "html", "bootstrap"],
+    seeLive: "#",
+    seeSource: "#"
     
   }
 ]
@@ -114,36 +122,80 @@ const showCaseElement = document.createElement("div")
   
   const showCaseBtn = document.createElement("button")
   showCaseBtn.setAttribute("class", "project-btn")
-  showCaseBtn.textContent = showCaseProject.technology
+  showCaseBtn.textContent = "See Project"
   showCaseBtnContainer.appendChild(showCaseBtn)
   
   return showCaseElement
 }
+
+const generateProjectListsDom = ()=>{
+  const projectsContainer = document.createElement("div")
+  projectsContainer.setAttribute("class", "all-project")
+
+  projectsData.forEach((project)=>{
+    const projectContainer = document.createElement("div")
+    projectContainer.setAttribute("class", "projects-primary")
+    projectsContainer.appendChild(projectContainer)
+    
+    const projectHeading = document.createElement("div")
+    projectHeading.setAttribute("class", "projects-heading1")
+    projectContainer.appendChild(projectHeading)
+
+    const projectHeadingText1 = document.createElement("h3")
+    projectHeadingText1.textContent = project.titleTop
+    projectHeading.appendChild(projectHeadingText1)
+
+    const projectHeadingText2 = document.createElement("span")
+    projectHeadingText2.textContent = project.titleBottom
+    projectHeadingText1.appendChild(projectHeadingText2)
+
+    const projectDescription = document.createElement("div")
+    projectDescription.setAttribute("class", "projects-disc1")
+    projectContainer.appendChild(projectDescription)
+
+    const projectDescriptionText = document.createElement("p")
+    projectDescriptionText.textContent = project.description
+    projectDescription.appendChild(projectDescriptionText)
+
+    const technologyElement = document.createElement("ul")
+    technologyElement.setAttribute("class", "project1-bttns")
+    projectContainer.appendChild(technologyElement)
+
+    project.technologies.forEach((tech)=>{
+      const technologyList = document.createElement("li")
+      technologyElement.appendChild(technologyList)
+
+      const technologyItem = document.createElement("button")
+      technologyItem.setAttribute("class", "project1-btns")
+      technologyItem.setAttribute("type", "button")
+      technologyItem.textContent = tech
+      technologyList.appendChild(technologyItem)
+
+    })
+
+    const projectBtn = document.createElement("button")
+    projectBtn.setAttribute("class", "project1-btn")
+    projectBtn.setAttribute("type", "button")
+    projectBtn.textContent = "See Project"
+    projectContainer.appendChild(projectBtn)
+
+    projectsContainer.appendChild(projectContainer)
+
+
+  })
+
+  return projectsContainer
+
+}
+
 const populateProjects = ()=>{
   const projectsContainer = document.querySelector("#portfolio")
   const showCaseElement = generateShowCaseDom()
   projectsContainer.appendChild(showCaseElement)
   
-
-
-
-  // <div class="all-project">
-  //     <div class="projects-primary">
-  //       <div class="projects-heading1">
-  //         <h3>Professional art <span>printing Data</span></p>
-  //       </div>
-  //       <div class="projects-disc1">
-  //         <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
-  //       </div>
-  //       <ul class="project1-bttns">
-  //         <li><button type="button" class="project1-btns">html</button></li>
-  //         <li><button type="button" class="project1-btns">bootstrap</button></li>
-  //         <li><button type="button" class="project1-btns">Ruby</button></li>
-  //       </ul>
-  //       <button type="button" class="project1-btn">See project</button>
-  //     </div>
- 
-
+  const projectList = generateProjectListsDom()
+  projectsContainer.appendChild(projectList)
+  
 }
 
 menuIcon.addEventListener('click', ()=>{
