@@ -79,6 +79,13 @@ const menuIcon = document.querySelector("#menu-icon");
 const menuToggle = document.querySelector("#menu-toggle");
 const menuSection = document.querySelector("#menu-section");
 
+const removePopup = ()=>{
+  document.body.style.overflowY = "unset";
+  const popupContainer = document.getElementById("popup-container")
+  selectedProject = null;
+  popupContainer.remove()
+}
+
 const addPopup = ()=>{
   console.log(selectedProject)
   if(selectedProject){
@@ -108,7 +115,9 @@ const addPopup = ()=>{
 
     const popupHeadingBtn = document.createElement("button")
     popupHeadingBtn.setAttribute("class", "popup-heading-btn")
+    popupHeadingBtn.addEventListener("click", removePopup)
     popupHeading.appendChild(popupHeadingBtn)
+
 
     const popupClose = document.createElement("i")
     popupClose.setAttribute("class", "fa-solid fa-xmark")

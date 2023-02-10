@@ -628,6 +628,7 @@ body {
   font-family: 'Inter', serif;
   font-size: 17px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .popup-disc-btn-item i {
