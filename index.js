@@ -128,14 +128,14 @@ const addPopup = () => {
       const popupBtn = document.createElement('button');
       popupBtn.setAttribute('class', 'popup-btn-item');
       popupBtnItem.appendChild(popupBtn);
-    })
+    });
 
     const popupImgContainer = document.createElement('div');
     popupImgContainer.setAttribute('class', 'popup-img-container');
     popup.appendChild(popupImgContainer);
 
     const popupImg = document.createElement('img');
-    popupImg.setAttribute('class', 'popup-img')
+    popupImg.setAttribute('class', 'popup-img');
     popupImg.setAttribute('src', selectedProject.image);
     popupImgContainer.appendChild(popupImg);
 
@@ -166,7 +166,7 @@ const addPopup = () => {
     const popupDescriptionBtnItem2 = document.createElement('a');
     popupDescriptionBtnItem2.setAttribute('class', 'popup-disc-btn-item');
     popupDescriptionBtnItem2.setAttribute('href', selectedProject.seeSource);
-    popupDescriptionBtnItem2.textContent = 'See Source'
+    popupDescriptionBtnItem2.textContent = 'See Source';
     popupBtnList2.appendChild(popupDescriptionBtnItem2);
 
     const popupDescriptionIcon2 = document.createElement('i');
@@ -185,7 +185,6 @@ const showProject = (evt) => {
     selectedProject = { ...projectsData[id], id };
   }
   addPopup();
-
 };
 
 const generateShowCaseDom = () => {
