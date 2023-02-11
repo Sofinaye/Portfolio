@@ -545,7 +545,7 @@ body {
   overflow: hidden;
   height: 100vh;
   z-index: 100;
-  padding: 2rem 1rem;
+  padding: 2rem;
   background-color: rgba(151, 148, 147, 0.9);
 }
 

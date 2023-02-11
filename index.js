@@ -104,7 +104,7 @@ const addPopup = () => {
     if (selectedProject.id === 'showCase') {
       popupHeadingText.textContent = selectedProject.title;
     } else {
-      popupHeadingText.textContent = selectedProject.titleTop + selectedProject.titleTop;
+      popupHeadingText.textContent = selectedProject.titleTop + ' ' + selectedProject.titleBottom;
     }
     popupHeading.appendChild(popupHeadingText);
 
