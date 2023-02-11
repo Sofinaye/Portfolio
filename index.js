@@ -101,10 +101,6 @@ const addPopup = () => {
     const popupHeadingText = document.createElement('h2');
     popupHeadingText.setAttribute('class', 'popup-heading-text');
 
-    const popupBody = document.createElement('div')
-    popupBody.setAttribute('class', 'popupBody')
-    popup.appendChild(popupBody)
-
     if (selectedProject.id === 'showCase') {
       popupHeadingText.textContent = selectedProject.title;
     } else {
@@ -123,6 +119,7 @@ const addPopup = () => {
 
     const popupList = document.createElement('ul');
     popupList.setAttribute('class', 'popup-btn');
+    popup.appendChild(popupList)
 
     selectedProject.technologies.forEach((tech) => {
       const popupBtnItem = document.createElement('li');
@@ -133,6 +130,10 @@ const addPopup = () => {
       popupBtn.textContent = tech;
       popupBtnItem.appendChild(popupBtn);
     });
+
+    const popupBody = document.createElement('div')
+    popupBody.setAttribute('class', 'popupBody')
+    popup.appendChild(popupBody)
 
     const popupImgContainer = document.createElement('div');
     popupImgContainer.setAttribute('class', 'popup-img-container');

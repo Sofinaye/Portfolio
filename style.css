@@ -888,16 +888,28 @@ body {
 
   .popupBody {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+  }
+
+  .popupDesci {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding-bottom: 2rem;
   }
 
   .popup-img-container {
-    height: 90vh;
+    height: 100%;
+    flex: 1;
   }
 
   .popupImg {
     height: 100%;
     width: auto;
+  }
+  .popup-btn-item {
+    font-size: 15px;
   }
 }
 
