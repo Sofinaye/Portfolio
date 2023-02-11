@@ -563,7 +563,7 @@ body {
 
 .popup-heading-text {
   font-size: 32px;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   color: #172b4d;
 }
 
@@ -589,7 +589,7 @@ body {
 .popup-btn-item {
   padding: 1rem;
   margin: 4rem 0 2rem 0;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-size: 13px;
   font-weight: 600;
   color: #3c3a39;
@@ -606,7 +606,7 @@ body {
 }
 
 .popup-disc {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-size: 16px;
   color: #344563;
   margin: 2rem 0;
@@ -625,7 +625,7 @@ body {
   border: none;
   background-color: #ff6b00;
   color: #fff;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-size: 17px;
   font-weight: 700;
   text-decoration: none;
@@ -633,6 +633,12 @@ body {
 
 .popup-disc-btn-item i {
   margin-left: 1.5rem;
+}
+
+.error-msg {
+  color: #f79696;
+  padding-left: 30px;
+  margin-top: -27px;
 }
 
 @media only screen and (min-width: 768px) {
