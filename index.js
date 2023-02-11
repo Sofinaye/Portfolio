@@ -101,6 +101,10 @@ const addPopup = () => {
     const popupHeadingText = document.createElement('h2');
     popupHeadingText.setAttribute('class', 'popup-heading-text');
 
+    const popupBody = document.createElement('div')
+    popupBody.setAttribute('class', 'popupBody')
+    popup.appendChild(popupBody)
+
     if (selectedProject.id === 'showCase') {
       popupHeadingText.textContent = selectedProject.title;
     } else {
@@ -132,20 +136,24 @@ const addPopup = () => {
 
     const popupImgContainer = document.createElement('div');
     popupImgContainer.setAttribute('class', 'popup-img-container');
-    popup.appendChild(popupImgContainer);
+    popupBody.appendChild(popupImgContainer);
 
     const popupImg = document.createElement('img');
     popupImg.setAttribute('class', 'popup-img');
     popupImg.setAttribute('src', selectedProject.image);
     popupImgContainer.appendChild(popupImg);
 
+    const popupDesc = document.createElement('div');
+    popupDesc.setAttribute('class', 'popupDesci');
+    popupBody.appendChild(popupDesc);
+    
     const popupDescription = document.createElement('p');
     popupDescription.setAttribute('class', 'popup-disc');
     popupDescription.textContent = selectedProject.description;
-    popup.appendChild(popupDescription);
+    popupDesc.appendChild(popupDescription);
     const popupDescriptionBtn = document.createElement('ul');
     popupDescriptionBtn.setAttribute('class', 'popup-disc-btn');
-    popup.appendChild(popupDescriptionBtn);
+    popupDesc.appendChild(popupDescriptionBtn);
 
     const popupBtnList1 = document.createElement('li');
     popupDescriptionBtn.appendChild(popupBtnList1);

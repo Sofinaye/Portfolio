@@ -885,6 +885,20 @@ body {
   .menu-section-active {
     width: 0;
   }
+
+  .popupBody {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .popup-img-container {
+    height: 90vh;
+  }
+
+  .popupImg {
+    height: 100%;
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
