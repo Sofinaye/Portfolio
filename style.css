@@ -541,7 +541,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   height: 100vh;
   z-index: 100;
   padding: 2rem 1rem;
@@ -551,7 +552,6 @@ body {
 .popup {
   background-color: #fff;
   padding: 1.5rem;
-  max-width: 100%;
 }
 
 .popup-heading {
@@ -599,10 +599,13 @@ body {
 
 .popup-img-container {
   width: 100%;
+  height: 70vw;
 }
 
 .popup-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .popup-disc {
@@ -616,7 +619,8 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  margin: 1rem 0;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   gap: 2rem;
 }
 
@@ -900,22 +904,48 @@ body {
   }
 
   .popup-img-container {
-    height: 100%;
-    flex: 1;
-  }
-
-  .popupImg {
-    height: 100%;
-    width: auto;
+    width: 60%;
+    height: 35vw;
   }
 
   .popup-btn-item {
     font-size: 15px;
+  }
+
+  .popup-disc-btn {
+    justify-content: flex-start;
+  }
+
+  #popup-container {
+    padding: 5% 6%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
   .all-project {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popupDesci {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 769px) {
+  .popupDesci {
+    width: 67%;
+  }
+
+  .popup-disc-btn {
+    gap: 1rem;
+  }
+
+  .popup-btn-item {
+    font-size: 13px;
+    padding: 0.5rem;
   }
 }

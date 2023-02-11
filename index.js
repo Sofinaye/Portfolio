@@ -80,6 +80,7 @@ const menuSection = document.querySelector('#menu-section');
 const removePopup = () => {
   document.body.style.overflowY = 'unset';
   const popupContainer = document.getElementById('popup-container');
+  document.querySelector('.about-overly').style.display = 'block';
   selectedProject = null;
   popupContainer.remove();
 };
@@ -89,6 +90,7 @@ const addPopup = () => {
     const popupContainer = document.createElement('div');
     popupContainer.setAttribute('id', 'popup-container');
     document.body.style.overflowY = 'hidden';
+    document.querySelector('.about-overly').style.display = 'none';
     document.body.appendChild(popupContainer);
     const popup = document.createElement('div');
     popup.setAttribute('class', 'popup');
