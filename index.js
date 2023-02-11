@@ -85,7 +85,6 @@ const removePopup = () => {
 };
 
 const addPopup = () => {
-  console.log(selectedProject);
   if (selectedProject) {
     const popupContainer = document.createElement('div');
     popupContainer.setAttribute('id', 'popup-container');
@@ -127,6 +126,7 @@ const addPopup = () => {
 
       const popupBtn = document.createElement('button');
       popupBtn.setAttribute('class', 'popup-btn-item');
+      popupBtn.textContent = tech;
       popupBtnItem.appendChild(popupBtn);
     });
 
@@ -172,8 +172,6 @@ const addPopup = () => {
     const popupDescriptionIcon2 = document.createElement('i');
     popupDescriptionIcon2.setAttribute('class', 'fa-brands fa-github');
     popupDescriptionBtnItem2.appendChild(popupDescriptionIcon2);
-
-    console.log(popupContainer);
   }
 };
 
@@ -223,7 +221,7 @@ const generateShowCaseDom = () => {
   showCaseTechnology.setAttribute('class', 'project-btns');
   showCaseDescription.appendChild(showCaseTechnology);
 
-  showCaseProject.technologies.forEach(tech => {
+  showCaseProject.technologies.forEach((tech) => {
     const showCaseTechnologyItem = document.createElement('li');
     showCaseTechnology.appendChild(showCaseTechnologyItem);
     const showCaseTechnologyItemList = document.createElement('button');
@@ -280,7 +278,7 @@ const generateProjectListsDom = () => {
     technologyElement.setAttribute('class', 'project1-bttns');
     projectContainer.appendChild(technologyElement);
 
-    project.technologies.forEach(tech => {
+    project.technologies.forEach((tech) => {
       const technologyList = document.createElement('li');
       technologyElement.appendChild(technologyList);
 
@@ -324,7 +322,7 @@ menuToggle.addEventListener('click', () => {
   document.body.style.overflowY = 'scroll';
 });
 
-document.querySelectorAll('.menu-item a').forEach(item => {
+document.querySelectorAll('.menu-item a').forEach((item) => {
   item.addEventListener('click', () => {
     menuSection.classList.remove('menu-section-active');
     document.body.style.overflowY = 'scroll';
