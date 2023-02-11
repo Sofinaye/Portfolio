@@ -119,7 +119,7 @@ const addPopup = () => {
 
     const popupList = document.createElement('ul');
     popupList.setAttribute('class', 'popup-btn');
-    popup.appendChild(popupList)
+    popup.appendChild(popupList);
 
     selectedProject.technologies.forEach((tech) => {
       const popupBtnItem = document.createElement('li');
@@ -131,9 +131,9 @@ const addPopup = () => {
       popupBtnItem.appendChild(popupBtn);
     });
 
-    const popupBody = document.createElement('div')
-    popupBody.setAttribute('class', 'popupBody')
-    popup.appendChild(popupBody)
+    const popupBody = document.createElement('div');
+    popupBody.setAttribute('class', 'popupBody');
+    popup.appendChild(popupBody);
 
     const popupImgContainer = document.createElement('div');
     popupImgContainer.setAttribute('class', 'popup-img-container');
@@ -147,7 +147,6 @@ const addPopup = () => {
     const popupDesc = document.createElement('div');
     popupDesc.setAttribute('class', 'popupDesci');
     popupBody.appendChild(popupDesc);
-    
     const popupDescription = document.createElement('p');
     popupDescription.setAttribute('class', 'popup-disc');
     popupDescription.textContent = selectedProject.description;
